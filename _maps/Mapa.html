@@ -1,0 +1,36 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+
+  <!-- Dependencies: JQuery and GMaps API should be loaded first -->
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <!-- CSS and JS for our code -->
+  <link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+  <script src="js/jquery-gmaps-latlon-picker.js"></script>
+
+</head>
+
+<body >
+
+  <fieldset class="gllpLatlonPicker">
+    <input type="text" class="gllpSearchField">
+    <input type="button" class="gllpSearchButton" value="search">
+    <br/><br/>
+    
+    <div class="gllpMap" style="width:80%;height:55%;">Google Maps</div>
+      <input type="hidden" class="gllpLatitude" value="-12.0478158"/>
+      <input type="hidden" class="gllpLongitude" value="-77.06220280000002"/>
+
+      <input type="hidden" class="gllpZoom" value="12"/>
+<!--    <input type="button" class="gllpUpdateButton" value="update map"> -->
+  </fieldset>
+
+  <div style="width:80%;height:35%;background-color:#E6E6E6;">
+    
+  </div>
+</body>
+
+</html>

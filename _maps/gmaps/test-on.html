@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<link href="http://smartphones.movistar.com.pe/css/style.css" rel="stylesheet"/>-->
+        <!--<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>-->
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            
+            $(function(){
+                
+                createMenu();
+                //createSubMenu();
+
+                $('body #container li a').live('click', function(e) {
+                    //e.preventDefault();
+                    alert('chiiii');
+                });
+ 
+                // New on() style:
+                $('#container').on('click', '.item', function(e) {
+                    e.preventDefault();
+                    console.log('item clicked');
+                });
+                
+                $('#menu').on('mouseenter', 'li', function(event) {  
+                    event.preventDefault();
+                    console.log('item mouseenter');
+                    var pos = $(this).position();
+                    var posLeft = pos.left - $(".submenu-item-fijo").width() + $(this).width() + -33;
+                    var posTop = pos.top - $(".submenu-item-fijo").height() + $(this).height() + 31;
+                    $(".submenu-item-fijo").css("top", posTop + "px");
+                    $(".submenu-item-fijo").css("left", posLeft + "px");
+                    $(".submenu-item-fijo").removeClass("not-visible"); return false;
+                });
+                
+                $('#menu').on('mouseout', 'li', function(event) {
+                    event.preventDefault();
+                    console.log('item mouseout');
+                    $(".submenu-item-fijo").addClass("not-visible"); return false;
+                });
+                
+            })
+            
+            
+            function createSubMenu(){
+                document.write('<div class="submenu-desplegable submenu-item-fijo not-visible">');
+                document.write('<ul class="lista-menu-1">');
+                document.write('<li class="item"><a href="http://www.movistar.com.pe/fijo/duos-y-trios">Dúos y Tríos</a></li>');
+                document.write('<li class="bg-F0F1F2"><a href="http://www.movistar.com.pe/fijo/lineas">Líneas</a></li>');
+                document.write('<li><a href="http://www.movistar.com.pe/fijo/larga-distancia/servicios">Larga Distancia</a></li>');
+                document.write('<li class="bg-F0F1F2"><a href="http://www.movistar.com.pe/fijo/planes-de-voz/fijo-movil/plan-familia-fijo-movil">Planes de Voz</a></li>');
+                document.write('<li><a href="http://www.movistar.com.pe/fijo/equipos-telefonicos">Equipos Telefónicos</a></li>');
+                document.write('<li class="bg-F0F1F2"><a href="http://www.movistar.com.pe/fijo/tarjetas">Tarjetas</a></li>');
+                document.write('</ul>');
+                document.write('</div>');
+            }
+            
+            function createMenu(){
+                document.write('<div id="container">');
+                document.write('<ul>');
+                document.write('<li><a href="#" class="not-bg" style="padding:0;"></a></li>');
+                document.write('<li><a id="fijo" style="padding: 10px 22px 30px 10px;" href="#">fijo</a></li>');
+                document.write('<li><a id="movil"  href="#">movil</a></li>');
+                document.write('<li><a id="internet" href="#t">internet</a></li>'); 
+                document.write('<li><a id="tv" href="#">tv</a></li>');
+                document.write('<li><a id="promociones" href="#">promos</a></li>');
+                document.write('<li><a id="ayuda"  href="#">ayuda</a></li>');
+                document.write('<li><a id="tienda" href="#">tienda</a></li>');
+                document.write("</ul>");
+                document.write('</div">');
+            }
+            
+        </script>
+    </body>
+</html>
