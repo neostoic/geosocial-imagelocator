@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <style>
+            .view-more{
+                cursor: pointer;
+            }
+            .info-plan{
+                display: none;
+            }
+            @media (max-width: 480px) {
+                .no-mobile{
+                    display: none;
+                }
+            }
+            .despliegla-info-plan{
+                background-color: #f6f7f9;
+            }
+            .despliegla-info-plan tr{
+                border-bottom: 1px dotted #ced3d5;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>Heading 1</th>
+                        <th class="no-mobile">Heading 2</th>
+                        <th>Heading 3</th>
+                        <th class="no-mobile">Heading 4</th>
+                        <th>Heading 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Info 1</td>
+                        <td class="no-mobile">Info 2</td>
+                        <td class="view-more">+</td>
+                        <td class="no-mobile">Info 4</td>
+                        <td>Info 5</td>
+                    </tr>
+                    <tr class="info-plan">
+                        <td colspan="5">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="despliegla-info-plan">
+                                <tr>
+                                    <th scope="col">Minutos RPM</th>
+                                    <th scope="col">300</th>
+                                </tr>
+                                <tr>
+                                    <td>Minutos
+                                        (Minutos Multidestino (MM -Movistar a Movistar-, MF -Movistar a Fijos-, MO -Movistar a otros operadores-, LDI -Larga Distancia Internacional-: USA y Canada).</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Internet MB</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>SMS (SMS a destinos nacionales).</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de plan</td>
+                                    <td>Control</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Le javascript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                //alert('aaa');
+                $('.view-more').click(function(){
+                    $('.info-plan').toggle();
+                });
+            });
+        </script>
+    </body>
+</html>

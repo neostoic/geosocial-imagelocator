@@ -1,0 +1,15 @@
+.map{
+	
+}
+.contenedor{
+	position:relative;
+	padding-top:5%;
+	padding-left:2%;
+	padding-right:2%;
+	background-color: cyan;
+}
+.img{
+width:200px;
+height:200px;
+margin:10px;
+}

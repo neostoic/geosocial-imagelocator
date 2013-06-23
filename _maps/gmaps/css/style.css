@@ -1,0 +1,275 @@
+/* 
+    Document   : style
+    Created on : 11/10/2012, 03:06:38 PM
+    Author     : mMontenegro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Inicio Monitores */
+
+/*640px*/
+@media screen and (max-width: 640px) 
+{ 
+
+}
+
+/*800px*/
+@media screen and (max-width: 800px) 
+{ 
+
+}
+
+/*1024px*/
+@media screen and (max-width: 1024px) 
+{ 
+
+}
+/* Fin Monitores */
+
+/* Inicio Smartphones */
+
+/* iPhone */
+/*Landscape Mode*/
+
+@media screen and (max-device-width: 480px) 
+{ 
+
+}
+/* Portrait Mode */
+
+@media screen and (max-device-width: 320px) 
+{ 
+
+}
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+only screen and (min-device-pixel-ratio : 1.5) 
+{ 
+
+}
+
+/* HTC Evo */
+@media screen and (max-device-width: 480px) 
+{ 
+
+}
+
+/* BlackBerry Torch */
+@media screen and (max-device-width: 480px) 
+{ 
+
+}
+
+/* HTC Thunderbolt */
+@media screen and (max-device-width: 480px) 
+{ 
+
+}
+
+/* HD2 */
+@media screen and (max-device-width: 480px) 
+{ 
+
+}
+
+/* Fin Smartphones */
+
+/* Inicio Tablets */
+
+/* iPad */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) 
+{ 
+
+}
+
+/* iPad 2 */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) 
+{ 
+
+}
+
+/* iPad 3 */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Samsung Galaxy Tab 10.1 */
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Motorola Xoom */
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) 
+{ 
+
+}
+
+/* HTC Flyer */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 600px) and (orientation: portrait) 
+{ 
+
+}
+
+/* BlackBerry PlayBook */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 600px) and (orientation: portrait) 
+{ 
+
+}
+
+/* HP TouchPad */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Lenovo Thinkpad Tablet */
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Sony Tablet S */
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) 
+{ 
+
+}
+
+/* T-Mobile G-Slate */
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) 
+{ 
+
+}
+
+/* ViewSonic ViewPad 10 */
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 600px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Dell Streak 7 */
+/* Landscape Mode */
+@media (max-device-width: 800px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 480px) and (orientation: portrait) 
+{ 
+
+}
+
+/* ASUS Eee Pad Transformer */
+/* Landscape Mode */
+@media (max-device-width: 1080px) and (orientation: landscape) 
+{ 
+
+}
+
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) 
+{ 
+
+}
+
+/* Fin Tablets */
+
+@media (max-width:500px){
+    body{
+        background-color:red;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        background-color:yellow;
+    }
+}
